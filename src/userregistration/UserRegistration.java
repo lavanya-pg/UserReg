@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistration
 {
 	Scanner scanner = new Scanner(System.in);
-    public static final String NUMBERPATTERN = "^[+0-9]{2}{10}$";
+    public static final String PASSWORDPATTERN = "[0-9a-zA-Z!@#$%^&*]{8,}";
 
     public static void main(String[] args)
     {
@@ -15,9 +15,9 @@ public class UserRegistration
     }
     private void readInput() 
     {
-        System.out.println("Enter MobileNumber ");
-        String MobileNumber = scanner.next();
-        validateInput(NUMBERPATTERN,MobileNumber);
+        System.out.println("Enter A PassWord ");
+        String PassWord = scanner.next();
+        validateInput(PASSWORDPATTERN,PassWord);
     }
 
     private void validateInput(String pattern, String input)
