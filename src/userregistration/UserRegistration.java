@@ -16,7 +16,7 @@ public class UserRegistration
     }
     private void readInput() 
     {
-        System.out.println("Enter A PassWord ");
+        System.out.println("Enter the PassWord ");
         String PassWord = scanner.next();
         validateInput(PASSWORDPATTERN,PassWord);
     }
