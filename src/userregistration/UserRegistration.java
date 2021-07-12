@@ -13,11 +13,11 @@ public class UserRegistration
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.readInput();
     }
-    private void readInput() //Method for reading an input.
+    private void readInput() 
     {
-        System.out.println("Enter first name ");
-        String firstName = scanner.next();
-        validateInput(NAMEPATTERN,firstName);
+        System.out.println("Enter last name ");
+        String lastName = scanner.next();
+        validateInput(NAMEPATTERN,lastName);
     }
 
     private void validateInput(String pattern, String input)
