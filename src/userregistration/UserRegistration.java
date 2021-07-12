@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class UserRegistration
 {
 	Scanner scanner = new Scanner(System.in);
-    public static final String EMAILPATTERN = "([0-9A-Za-z])+([-+._][0-9A-Za-z]+)*" + "@([0-9A-Za-z])+[.]([a-zA-Z])+([.][A-Za-z]+)*";
+    public static final String NUMBERPATTERN = "^[+0-9]{2}{10}$";
 
     public static void main(String[] args)
     {
@@ -15,9 +15,9 @@ public class UserRegistration
     }
     private void readInput() 
     {
-        System.out.println("Enter EmailID ");
-        String EmailID = scanner.next();
-        validateInput(EMAILPATTERN,EmailID);
+        System.out.println("Enter MobileNumber ");
+        String MobileNumber = scanner.next();
+        validateInput(NUMBERPATTERN,MobileNumber);
     }
 
     private void validateInput(String pattern, String input)
